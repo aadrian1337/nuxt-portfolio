@@ -46,8 +46,8 @@
     <section>
       <h2 class="text-4xl font-semibold mb-8">Latest Blog Posts</h2>
       <section>
-      <Post :posts="posts" />
-    </section>
+        <Post :posts="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-10"/>
+      </section>
     </section>
   </div>
 </template>

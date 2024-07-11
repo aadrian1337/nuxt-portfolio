@@ -14,7 +14,7 @@ const { data: posts } = await useAsyncData("posts", () =>
     like to subscribe to an RSS feed you can find it here.</p>
 
     <section>
-      <Post :posts="posts" />
+        <Post :posts="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-10"/>
     </section>
   </div>
 </template>
