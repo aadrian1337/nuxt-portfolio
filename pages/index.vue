@@ -5,7 +5,7 @@
 </script>
 
 <template>
-  <div class="flex flex-col gap-24 py-20">
+  <div class="flex flex-col gap-24">
     <section>
       <h1 class="text-5xl font-bold">Hello, I'm Johnny Banana</h1>
       <p class="text-base text-gray-800 mt-4">

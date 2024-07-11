@@ -9,8 +9,6 @@ tags:
   - tag4
 ---
 
-# Hello, World 👋🏻
-
 :::callout{title="Hello Here"}
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id auctor dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus id auctor dui.
 :::
