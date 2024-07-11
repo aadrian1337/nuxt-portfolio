@@ -44,7 +44,7 @@ const prevPage = () => {
         <p class="text-gray-700 mb-4">{{ post.description }}</p>
       </div>
     </div>
-    <div class="flex justify-center mt-6 mr-auto col-start-1 col-span-1">
+    <div class="flex justify-center mr-auto col-start-1 col-span-1">
       <button
         @click="prevPage"
         :disabled="currentPage === 1"
