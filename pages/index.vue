@@ -1,6 +1,6 @@
 <script setup>
   const { data: posts } = await useAsyncData("latest-posts", () =>
-    queryContent("/blog").sort({ date: -1 }).find()
+    queryContent("/blog").sort({ date: -1 }).limit(3).find()
   );
 </script>
 
@@ -46,7 +46,7 @@
     <section>
       <h2 class="text-4xl font-semibold mb-8">Latest Blog Posts</h2>
       <section>
-        <Post :posts="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 mt-8 gap-10"/>
+        <PostStatic :posts="posts" class="grid sm:grid-cols-2 lg:grid-cols-3 gap-8"/>
       </section>
     </section>
   </div>
