@@ -13,27 +13,28 @@
         v-if="data.cover"
         :src="`/images/${data.cover}`"
         alt="Cover Image"
-        class="w-full h-[450px] object-cover rounded-xl" />
+        class="w-full h-[450px] object-cover rounded-xl"
+      />
       <h1 class="text-4xl font-extrabold">{{ data.title }}</h1>
       <div class="flex flex-row gap-2">
         <a
           v-for="tag in data.tags"
           :key="tag"
           :href="`/blog/tags/${tag}`"
-          class="text-sm font-semibold inline-flex py-2 px-4 rounded-lg text-gray-100 bg-blue-500 uppercase last:mr-0 items-center">
+          class="inline-flex items-center px-4 py-2 text-sm font-semibold text-gray-100 uppercase bg-blue-500 rounded-lg last:mr-0"
+        >
           <Icon
             name="pajamas:label"
             size="1rem"
-            class="text-gray-100 mr-2" />
+            class="mr-2 text-gray-100"
+          />
           {{ tag }}
         </a>
       </div>
     </div>
-
-    <!-- Display the cover image if it exists -->
-
     <ContentRenderer
       :value="data"
-      class="prose mx-auto max-w-7xl" />
+      class="mx-auto prose max-w-7xl"
+    />
   </div>
 </template>
